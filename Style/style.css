@@ -101,8 +101,9 @@ body {
   overflow-x: hidden;
 }
 
-.videos {
+.video {
   display: flex;
+  align-items: center;
 }
 
 div {
@@ -110,7 +111,6 @@ div {
 }
 
 .media {
-  text-align: center;
   text-decoration: none;
   font-family: college;
 }
@@ -163,6 +163,10 @@ textarea {
   font-family: college;
 }
 
+.can {
+  text-align: center;
+}
+
 .calendario {
   display: block;
   margin-top: auto;
@@ -187,23 +191,47 @@ footer {
   right: 20px;
 }
 
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wh {
+  width: 40px;
+  height: 40px;
+  fill: #25d366;
+  animation: girar 3s linear infinite;
+}
+
 .f-img {
   height: 30px;
   margin: 0 50px 20px;
 }
 
 /********** Media Queries **********/
+.video {
+  display: flex;
+}
+
 @media (min-width: 990px) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 989px) {
-  .titulosplay h1 {
+  .titulosplay {
     margin-top: 0;
   }
   .video {
     display: block;
+  }
+  .videodos,
+  .videotres {
+    height: 470px;
+    width: 565px;
   }
 }
 @media (max-width: 768px) {
@@ -226,7 +254,12 @@ footer {
   }
   .video {
     display: block;
-    border: 0cap;
+    margin: 10px;
+  }
+  .videodos, .videouno,
+  .videotres {
+    height: 215px;
+    width: 300px;
   }
 }
 @font-face {

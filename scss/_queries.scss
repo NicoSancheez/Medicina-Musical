@@ -1,6 +1,8 @@
 /********** Media Queries **********/
 @media (max-width: 1550px) {}
-
+.video {
+    display: flex;
+}
 
 @media (min-width: 990px) {
     .container {
@@ -9,12 +11,18 @@
 }
 
 @media (max-width: 989px) {
-    .titulosplay h1 {
+    .titulosplay {
         margin-top: 0;
     }
 
     .video {
         display: block;
+    }
+
+    .videodos,
+    .videotres {
+        height: 470px;
+        width: 565px;
     }
 
 }
@@ -44,7 +52,13 @@
 
     .video {
         display: block;
-        border: 0cap;
+        margin: 10px;
+    }
+
+    .videodos,.videouno,
+    .videotres {
+        height: 215px;
+        width: 300px;
     }
 
 }
