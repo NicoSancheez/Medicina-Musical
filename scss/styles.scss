@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
 body {
     margin: 0;
     padding: 0;
@@ -15,9 +21,12 @@ header {
     padding: 10px 20px;
 }
 
-nav ul li {
+nav,
+ul,
+li {
+    text-align: center !important;
     list-style: none;
-    display: inline-block;
+    display: inline;
     margin: 10px 40px;
     font-family: college;
 }
@@ -50,18 +59,18 @@ ul {
     margin: 0 50px 20px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+p {
     margin-top: 30px;
     margin-bottom: 15px;
     font-family: sketch;
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-family: sketch;
+.fotosFechas {
+    height: 150px;
 }
 
 .botonHambur {
@@ -91,9 +100,21 @@ h2 {
 .tituloplay {
     margin-top: 150px;
     font-family: sketch;
+
+    h1 {
+        margin-top: 150px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
 }
 
-.playlistUno {
+
+.playlistUno,
+.playlistDos,
+.playtres,
+.playcuatro {
     margin-bottom: 3rem;
 }
 
@@ -127,7 +148,10 @@ textarea {
     cursor: pointer;
 }
 
-
+.video {
+    display: block;
+    
+}
 
 .wh {
     position: fixed;
@@ -136,11 +160,6 @@ textarea {
     right: 20px;
 }
 
-h3 {
-    font-size: 15px;
-    text-align: center;
-
-}
 
 .calendario {
 
@@ -174,17 +193,15 @@ a {
 main {
     margin: 50px;
     padding: 50px;
+    display: block;
 }
+
 
 footer {
     margin: 20px;
     padding: 20px 0;
     font-size: 15px;
     text-align: center;
-    background-color: black;
-    width: 100%;
-    position: relative;
-    bottom: 0;
 }
 
 /********** Media Queries **********/
