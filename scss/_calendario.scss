@@ -1,0 +1,14 @@
+.fotosFechas {
+    height: 200px;
+}
+.row>* {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+.conciertos {
+    text-align: center;
+    text-decoration: none;
+    font-family: college;
+}

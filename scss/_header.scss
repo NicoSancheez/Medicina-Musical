@@ -1,0 +1,48 @@
+@mixin anclas {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav,ul,
+li {
+    text-align: center;
+    list-style: none;
+    display: inline;
+    margin: auto;
+    font-family: college;
+}
+
+
+
+header {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.botonHambur {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    @include anclas;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke !important;
+    font-size: 30px;
+}
+
+nav a {
+    color: whitesmoke;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: greenyellow !important;
+}

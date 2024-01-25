@@ -1,0 +1,50 @@
+/********** Media Queries **********/
+@media (max-width: 1550px) {}
+
+
+@media (min-width: 990px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 989px) {
+    .titulosplay h1 {
+        margin-top: 0;
+    }
+
+    .video {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .titulosplay {
+        margin-top: 0;
+    }
+
+    .mapa {
+        height: 450px;
+    }
+
+    .calendario {
+        height: 350px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .f-img {
+        height: 30px;
+        margin: 0 25px 15px;
+    }
+
+    .video {
+        display: block;
+        border: 0cap;
+    }
+
+}

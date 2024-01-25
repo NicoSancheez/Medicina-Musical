@@ -1,3 +1,89 @@
+nav, ul,
+li {
+  text-align: center;
+  list-style: none;
+  display: inline;
+  margin: auto;
+  font-family: college;
+}
+
+header {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.botonHambur {
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke !important;
+  font-size: 30px;
+}
+
+nav a {
+  color: whitesmoke;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: greenyellow !important;
+}
+
+main {
+  margin: 50px;
+  padding: 50px;
+  display: block;
+}
+
+.titulosplay {
+  margin-top: 150px;
+  text-align: center;
+  font-family: sketch;
+}
+.titulosplay h1 {
+  margin-top: 150px;
+  text-align: center;
+}
+.titulosplay h2 {
+  margin-top: 80px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: sketch;
+}
+
+h3 {
+  text-align: center;
+  font-family: sketch;
+}
+
+.playlistUno,
+.playlistDos,
+.playtres,
+.playcuatro {
+  margin-bottom: 3rem;
+}
+
+.playlist {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,99 +101,18 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  text-align: center;
-  padding: 10px 20px;
+.videos {
+  display: flex;
 }
 
-nav,
-ul,
-li {
-  text-align: center !important;
-  list-style: none;
-  display: inline;
-  margin: 10px 40px;
-  font-family: college;
-}
-
-nav a {
-  color: whitesmoke;
-  transition: color 0.5s;
-}
-
-nav a:hover {
-  color: greenyellow !important;
-}
-
-@font-face {
-  font-family: college;
-  src: url(../Multimedia/Fonts/Colleged.ttf);
-}
-@font-face {
-  font-family: sketch;
-  src: url(../Multimedia/Fonts/Sketch_Block.ttf);
-}
-ul {
-  list-style-type: none;
-}
-
-.f-img {
-  height: 30px;
-  margin: 0 50px 20px;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-family: sketch;
-  text-align: center;
-}
-
-.fotosFechas {
-  height: 150px;
-}
-
-.botonHambur {
-  height: 50px;
-}
-
-.contacto {
-  text-align: center;
-  text-decoration: none;
-  font-family: college;
-}
-
-.conciertos {
-  text-align: center;
-  text-decoration: none;
-  font-family: college;
+div {
+  display: block;
 }
 
 .media {
   text-align: center;
   text-decoration: none;
   font-family: college;
-}
-
-.tituloplay {
-  margin-top: 150px;
-  font-family: sketch;
-}
-.tituloplay h1 {
-  margin-top: 150px;
-}
-.tituloplay h2 {
-  margin-top: 80px;
-}
-
-.playlistUno,
-.playlistDos,
-.playtres,
-.playcuatro {
-  margin-bottom: 3rem;
 }
 
 form {
@@ -135,20 +140,27 @@ textarea {
   margin-bottom: 10px;
 }
 
-.botonFormulario {
-  width: 15%;
-  cursor: pointer;
+.contacto {
+  text-align: center;
+  text-decoration: none;
+  font-family: college;
 }
 
-.video {
-  display: block;
+.fotosFechas {
+  height: 200px;
 }
 
-.wh {
-  position: fixed;
-  height: 40px;
-  bottom: 20px;
-  right: 20px;
+.row > * {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.conciertos {
+  text-align: center;
+  text-decoration: none;
+  font-family: college;
 }
 
 .calendario {
@@ -156,33 +168,9 @@ textarea {
   margin-top: auto;
 }
 
-li,
-a {
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  color: whitesmoke !important;
-  font-size: 30px;
-}
-
-.content {
-  display: grid;
-}
-
-.playlist {
-  width: 100%;
-}
-
 .mapa {
   display: block;
-  margin: auto;
   padding: 50px;
-}
-
-main {
-  margin: 50px;
-  padding: 50px;
-  display: block;
 }
 
 footer {
@@ -192,19 +180,38 @@ footer {
   text-align: center;
 }
 
+.wh {
+  position: fixed;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.f-img {
+  height: 30px;
+  margin: 0 50px 20px;
+}
+
 /********** Media Queries **********/
-@media (max-width: 1550px) {
+@media (min-width: 990px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 989px) {
+  .titulosplay h1 {
+    margin-top: 0;
+  }
   .video {
     display: block;
   }
-  .videochico {
-    height: 500px;
-    width: 815px;
-  }
 }
 @media (max-width: 768px) {
-  .titulosPlaylist h1 {
+  .titulosplay {
     margin-top: 0;
+  }
+  .mapa {
+    height: 450px;
   }
   .calendario {
     height: 350px;
@@ -217,9 +224,18 @@ footer {
     height: 30px;
     margin: 0 25px 15px;
   }
+  .video {
+    display: block;
+    border: 0cap;
+  }
 }
-.mapa {
-  height: 450px;
+@font-face {
+  font-family: college;
+  src: url(../Multimedia/Fonts/Colleged.ttf);
+}
+@font-face {
+  font-family: sketch;
+  src: url(../Multimedia/Fonts/Sketch_Block.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */

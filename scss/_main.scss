@@ -1,0 +1,46 @@
+main {
+    margin: 50px;
+    padding: 50px;
+    display: block;
+}
+
+.titulosplay  {
+    margin-top: 150px;
+    text-align: center;
+    font-family: sketch;
+
+    h1 {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 80px;
+        
+    }
+}
+
+h1,
+h2,
+p {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: sketch;
+}
+
+h3{
+    text-align: center;
+    font-family: sketch;
+}
+
+
+.playlistUno,
+.playlistDos,
+.playtres,
+.playcuatro {
+    margin-bottom: 3rem;
+}
+
+.playlist {
+    width: 100%;
+}
